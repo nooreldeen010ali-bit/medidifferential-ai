@@ -35,6 +35,63 @@ with st.form("clinical_case"):
     symptoms = st.text_area("Symptoms and duration")
     history = st.text_area("Medical history and medications")
     labs = st.text_area("Laboratory results and units")
+    
+    
+    st.subheader("Vital Signs")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        temperature = st.number_input(
+            "Temperature (°C)",
+            min_value=30.0,
+            max_value=45.0,
+            value=37.0,
+            step=0.1
+        )
+
+        heart_rate = st.number_input(
+            "Heart Rate (beats/min)",
+            min_value=0,
+            max_value=250,
+            value=80
+        )
+
+        systolic_bp = st.number_input(
+            "Systolic BP (mmHg)",
+            min_value=0,
+            max_value=300,
+            value=120
+        )
+
+    with col2:
+        respiratory_rate = st.number_input(
+            "Respiratory Rate (/min)",
+            min_value=0,
+            max_value=80,
+            value=16
+        )
+
+        spo2 = st.number_input(
+            "SpO₂ (%)",
+            min_value=0,
+            max_value=100,
+            value=98
+        )
+
+        diastolic_bp = st.number_input(
+            "Diastolic BP (mmHg)",
+            min_value=0,
+            max_value=200,
+            value=80
+        )
+
+    examination = st.text_area(
+        "Clinical Examination",
+        placeholder="Abdominal tenderness, guarding, rebound, "
+                    "chest findings, neurological findings..."
+        )
+    
 
     imaging_type = st.selectbox(
         "Imaging type",
