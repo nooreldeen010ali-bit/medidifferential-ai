@@ -132,6 +132,12 @@ Symptoms and duration: {symptoms or "Not provided"}
 Medical history and medications: {history or "Not provided"}
 Laboratory results: {labs or "Not provided"}
 Imaging type: {imaging_type}
+Temperature: {temperature} °C
+Heart rate: {heart_rate} beats/min
+Blood pressure: {systolic_bp}/{diastolic_bp} mmHg
+Respiratory rate: {respiratory_rate}/min
+SpO2: {spo2}%
+Clinical examination: {examination or "Not provided"}
 
 CLINICAL REASONING RULES
 
