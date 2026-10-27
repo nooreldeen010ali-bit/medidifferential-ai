@@ -152,69 +152,7 @@ Use concise headings and bullet points.
 This is educational support, not a replacement for clinical care.
 """
 
-OUTPUT FORMAT:
 
-1. CASE SUMMARY
-   Summarize the key symptoms, examination findings, and abnormal tests in 3-5 bullets.
-
-2. PRIORITIZED DIFFERENTIAL DIAGNOSIS
-   List no more than FIVE relevant diagnoses, ordered by clinical compatibility.
-   For each diagnosis provide:
-
-- Supporting evidence.
-- Opposing evidence or information still missing.
-- One sentence explaining why it belongs at this position.
-
-Do not invent numerical probabilities or imply that a diagnosis is confirmed.
-If evidence is insufficient to rank diagnoses confidently, explicitly state this limitation.
-Do not add weak or remote possibilities merely to fill five places.
-
-3. MUST-NOT-MISS CONDITIONS
-   List important dangerous alternatives that need consideration, even if they are not among the five leading diagnoses.
-   Explain the red flags that would raise concern.
-
-4. MISSING INFORMATION
-   List the most important unanswered clinical questions and examination findings.
-
-5. NEXT STEPS
-   Suggest appropriate assessment and investigations for a qualified clinician to consider. Explain briefly why each may help. Do not order unnecessary tests automatically.
-
-6. CLINICAL TEACHING PEARL
-   Give one concise, relevant educational takeaway.
-
-SAFETY RULES:
-
-- Do not make a definitive diagnosis.
-- Do not prescribe medications or doses.
-- Do not treat missing information as evidence against a disease.
-- Distinguish observed findings from assumptions.
-- Interpret laboratory results in context and acknowledge missing units or reference ranges.
-- Highlight emergency warning signs clearly.
-- A qualified clinician must verify all conclusions.
-- Keep the complete response concise, structured, and clinically relevant.
-
-Patient age: {age}
-Sex: {sex}
-Symptoms and duration: {symptoms or "Not provided"}
-History and medications: {history or "Not provided"}
-Laboratory results: {labs or "Not provided"}
-Imaging type: {imaging_type}
-
-Give a structured educational assessment:
-1. Case summary.
-2. Missing information.
-3. Differential diagnoses with supporting and opposing evidence.
-4. Dangerous diagnoses that must not be missed.
-5. Further assessment or investigations a clinician may consider.
-6. Limitations of the supplied data.
-7. Red flags requiring urgent or emergency assessment.
-
-Do not claim a definitive diagnosis.
-Do not invent findings, reference ranges, or probabilities.
-Do not prescribe medication or doses.
-State uncertainty clearly and use headings and bullet points.
-A qualified clinician must verify all conclusions.
-"""
 
             content = [{"type": "text", "text": prompt}]
 
