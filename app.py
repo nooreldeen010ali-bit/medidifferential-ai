@@ -71,7 +71,7 @@ if submitted:
 
     else:
         try:
-            api_key = st.secrets["GEMINI_API_KEY"]
+            api_key = st.secrets["GR0Q_API_KEY"]
             client = genai.Client(api_key=api_key)
 
             prompt = f"""
@@ -163,7 +163,7 @@ Rules:
 
         except KeyError:
             st.error(
-                "GEMINI_API_KEY is missing from Streamlit Secrets."
+                "GR0Q_API_KEY is missing from Streamlit Secrets."
             )
 
         except Exception as exc:
