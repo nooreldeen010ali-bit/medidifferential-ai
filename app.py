@@ -213,6 +213,13 @@ A qualified clinician must verify all conclusions.
 
 Use concise headings and bullet points.
 This is educational support, not a replacement for clinical care.
+ADDITIONAL RULES:
+- Keep the differential diagnosis focused on the 3 most relevant possibilities.
+- Put the leading diagnosis first and explain why.
+- Separate urgent red flags from routine follow-up.
+- Explain medical terms simply for medical students.
+- Use a concise comparison table when useful.
+- Avoid repeating the same information.
 """
 
 
