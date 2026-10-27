@@ -1,4 +1,4 @@
-import streamlit as 
+import streamlit as st 
 import base64
 from groq import Groq
 from pypdf import PdfReader
