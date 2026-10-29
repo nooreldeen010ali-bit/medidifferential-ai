@@ -339,6 +339,60 @@ EVIDENCE AND UPDATE REQUIREMENTS:
                 else:
                     st.error("Unsupported file type.")
                     st.stop()
+                    
+            # Search for clinical guidelines
+            tavily_key = st.secrets.get("TAVILY_API_KEY", "")
+
+            guideline_context = ""
+
+            if tavily_key:
+                try:
+                    tavily = TavilyClient(api_key=tavily_key)
+
+                    search_query = (
+                        "official clinical practice guidelines "
+                        "diagnosis treatment NICE WHO IDSA"
+                    )
+
+                    search_results = tavily.search(
+                        query=search_query,
+                        max_results=5,
+                        search_depth="basic"
+                    )
+
+                    results = search_results.get("results", [])
+
+                    if results:
+                        guideline_context = (
+                            "\n\nRETRIEVED GUIDELINE SOURCES:\n"
+                        )
+
+                        for item in results:
+                            guideline_context += (
+                                f"\nTitle: {item.get('title', 'Unknown')}\n"
+                                f"URL: {item.get('url', '')}\n"
+                                f"Content: {item.get('content', '')[:1200]}\n"
+                            )
+
+                except Exception as search_error:
+                    st.warning(
+                        "Guideline search unavailable. "
+                        "Recommendations may not be current."
+                    )
+
+            if guideline_context:
+                content.append({
+                    "type": "text",
+                    "text": (
+                        "\n\nUse the following retrieved sources "
+                        "to support treatment recommendations. "
+                        "Do not claim a source is a guideline unless verified. "
+                        "If sources do not support a recommendation, "
+                        "state that it could not be verified.\n"
+                        + guideline_context
+                    )
+                })
+                
 
             with st.spinner("Analyzing the case..."):
                 response = client.chat.completions.create(
