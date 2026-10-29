@@ -3,7 +3,7 @@ import base64
 from groq import Groq
 from pypdf import PdfReader
 from io import BytesIO
-
+from tavily import TavilyClient
 st.set_page_config(
     page_title="MediDifferential AI",
     page_icon="🩺",
