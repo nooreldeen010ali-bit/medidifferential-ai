@@ -182,8 +182,16 @@ Respiratory rate: {respiratory_rate}/min
 SpO2: {spo2}%
 Clinical examination: {examination or "Not provided"}
 
-CLINICAL REASONING RULES
+CLINICAL REASONING RULES 
+ADDITIONAL EVIDENCE RULES:
 
+- Never infer or invent laboratory findings that were not explicitly provided.
+- Do not claim bandemia unless a band count or differential result explicitly supports it.
+- Clearly distinguish observed findings from possible interpretations.
+- Do not state that a clinical sign is present unless it was documented.
+- If information is missing, write "Not provided" instead of guessing.
+- Avoid overconfident language such as "textbook" or "strongly confirms" when the diagnosis has not been verified.
+- Check spelling and medical terminology before producing the final answer.
 1. CASE SUMMARY
 Summarize the key symptoms, vital signs, examination findings,
 and abnormal laboratory results. Do not invent missing values.
