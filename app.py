@@ -326,7 +326,10 @@ ADDITIONAL RULES:
 
             if answer:
                 st.subheader("Differential assessment")
-                st.markdown(answer)
+                st.markdown(
+    answer.replace("<br />", "\n").replace("<br/>", "\n").replace("<br>", "\n"),
+    unsafe_allow_html=False
+                )
                 st.warning(
                     "Educational output only. A qualified clinician "
                     "must verify the findings and conclusions."
