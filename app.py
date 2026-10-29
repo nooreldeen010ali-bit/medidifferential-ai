@@ -319,7 +319,7 @@ ADDITIONAL RULES:
                             "content": content
                         }
                     ],
-                    max_completion_tokens=1800
+                    max_completion_tokens=800
                 )
 
             answer = response.choices[0].message.content
