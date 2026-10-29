@@ -271,6 +271,28 @@ ADDITIONAL RULES:
 - Explain medical terms simply for medical students.
 - Use a concise comparison table when useful.
 - Avoid repeating the same information.
+EVIDENCE-BASED TREATMENT PATHWAY:
+
+For each leading diagnosis, include a separate educational management pathway.
+
+1. Immediate priorities and emergency red flags.
+2. Diagnostic confirmation and severity assessment.
+3. First-line treatment options and alternatives, only when supported by a verified guideline.
+4. Medication safety, contraindications, interactions, and relevant patient factors.
+5. Monitoring, reassessment, complications, and follow-up.
+6. Criteria for admission, specialist consultation, escalation, or referral.
+7. Guideline references: issuing organization, exact guideline title, publication or update date, and source URL.
+
+EVIDENCE AND UPDATE REQUIREMENTS:
+
+- Use retrieved, verified clinical guidelines as the primary source for treatment recommendations.
+- Distinguish guideline recommendations from general medical knowledge and clinical inference.
+- Never invent citations, URLs, guideline dates, doses, or treatment recommendations.
+- If no suitable current guideline has been retrieved, explicitly state that the latest recommendation could not be verified.
+- Consider age, pregnancy status where relevant, allergies, comorbidities, renal and hepatic function, severity, and local antimicrobial resistance when applicable.
+- Do not replace a qualified clinician's decision.
+- For emergency conditions, prioritize urgent clinical assessment and stabilization.
+- State when recommendations may differ between countries or healthcare settings.
 """
 
 
