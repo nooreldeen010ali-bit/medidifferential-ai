@@ -23,6 +23,49 @@ st.info(
     "Uploaded images and case details are sent to the AI provider."
 )
 
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #f4f8fc;
+    }
+
+    h1, h2, h3 {
+        color: #123b63;
+    }
+
+    [data-testid="stForm"] {
+        background-color: white;
+        padding: 1.2rem;
+        border-radius: 16px;
+        border: 1px solid #d8e5f0;
+    }
+
+    div.stButton > button,
+    div.stFormSubmitButton > button {
+        background-color: #1769aa;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        min-height: 44px;
+    }
+
+    div.stButton > button:hover,
+    div.stFormSubmitButton > button:hover {
+        background-color: #0f4f85;
+        color: white;
+    }
+
+    [data-testid="stAlert"] {
+        border-radius: 12px;
+    }
+
+    section[data-testid="stSidebar"] {
+        background-color: #eaf2fa;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 with st.form("clinical_case"):
     st.subheader("Patient information")
 
